@@ -51,7 +51,7 @@ begin
           shift_reg <= {PS2_DATA, shift_reg[8:1]};
         end
         else begin
-          count_bit <= 4'b0;
+          count_bit <= 4'b0; 
         end
     end
 end 
