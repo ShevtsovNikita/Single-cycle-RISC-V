@@ -9,7 +9,7 @@ module CSR(
     output logic [31:0] mtvec,
     output logic [31:0] mepc,
     output logic [31:0] csr_RD
-    );
+); 
     
 logic [31:0] mut, rd, mscratch, mc;
 logic [2:0] OP;
