@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
-module tb_alu #(parameter N = 4, logN = 2) (); // тестирую программу с укороченными операндами, чтобы было читабельнее 
+module tb_alu#(parameter N = 4, logN = 2) (); // тестирую программу с укороченными операндами, чтобы было читабельнее 
     logic [N - 1:0] a, b, result, result_expected;
-  logic [17:0] testvectors [32:0]; // массив для хранения тестовых векторов
+    logic [17:0] testvectors [32:0];
     logic [32:0] vectornum, errors;
     logic [4:0] aluop;
     logic clock, flag, flag_expected;
@@ -43,6 +43,3 @@ begin
 end
 
 endmodule
-
-
-
