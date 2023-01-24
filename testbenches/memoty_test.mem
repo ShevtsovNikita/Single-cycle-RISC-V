@@ -1,0 +1,16 @@
+0x00000293 // li t0, 0
+0x00100313 // li t1, 1
+0x10000393 // li t2, 256
+0x00100e13 // li t3, 1
+0x00000e93 // li t4, 0
+0x00f00f13 // li t5, 15
+0x00131593 // slli a1, t1, 1
+0x0015d593 // srli a1, a1, 1
+0x01ee8e63 // beq t4, t5, done
+0x00be7fb3 // and t6, t3, a1
+0x01d39533 // sll a0, t2, t4
+0x001e8e93 // addi t4, t4, 1
+0xfe0f86e3 // beqz t6, multiply
+0x00a282b3 // add t0, t0, a0
+0xfe5ff06f // j multiply
+0x00000013 // nop
